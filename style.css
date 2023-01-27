@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:#010409 ;
+    color: #fff;
+}
+.principal {
+    width: 400px;
+    height: 350px;
+    background-color: #293345;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    border-radius: 5px;
+    padding: 20px;
+    
+    
+}
+.principal h2 {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.principal button {
+    font-size: 25px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.input p {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.input input {
+    width: 250px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.card-resposta {
+    width: 400px;
+    height: 350px;
+    background-color: #293345;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    border-radius: 5px;
+    padding: 20px;
+}
+.card-resposta img {
+    width: 140px;
+    border-radius: 90px;
+}
