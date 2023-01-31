@@ -1,5 +1,5 @@
-import criarCard from "./components/card.js"
-import err from "./components/erro.js"
+import criarCard from "../components/card.js"
+import err from "../components/erro.js"
 
 const pegarDados = async (nomeDeUsuario) => {
     await fetch(`https://api.github.com/users/${nomeDeUsuario}`,{

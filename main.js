@@ -1,4 +1,4 @@
-import pegarDados from "./conection.js"
+import pegarDados from "./server/Conection.js"
 const verifica = document.getElementById("verificar")
 
 function verificar() {
