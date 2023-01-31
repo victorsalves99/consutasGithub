@@ -33,7 +33,6 @@ body {
     align-items: center;
     gap: 80px;
     border-radius: 5px;
-    padding: 20px;
     
     
 }
@@ -43,11 +42,16 @@ body {
     
 }
 .principal button {
-    font-size: 25px;
+    font-size: 1.3rem;
     padding: 10px 40px;
     border-radius: 10px;
     font-weight: 700;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+.principal button:hover {
+    background-color: #858383;
+    color: #fff;
 }
 .input p {
     margin-bottom: 15px;
@@ -87,4 +91,21 @@ body {
         opacity: 0;
     }
     
+}
+@media (max-width:400px) {
+    .principal {
+        width: 310px;
+        margin: 0px auto;
+    }
+    .principal h2 {
+        font-size: 23px;
+    }
+    .card-resposta {
+        width: 310px;
+    }
+    #erro {
+        margin-top: 0px;
+        width: 310px;
+
+    }
 }
