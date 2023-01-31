@@ -1,4 +1,5 @@
-import criarCard from "./index.js"
+import criarCard from "./components/card.js"
+import err from "./components/erro.js"
 
 const pegarDados = async (nomeDeUsuario) => {
     await fetch(`https://api.github.com/users/${nomeDeUsuario}`,{
@@ -9,8 +10,11 @@ const pegarDados = async (nomeDeUsuario) => {
     }).then((resposta => {
         return resposta.json()
     })).then((dados) => {
-        console.log(dados)
-        criarCard(dados)
+        if (dados.message) {
+            err()
+        }else {
+            criarCard(dados)
+        }
     }).catch((err)=> {
         DadosUsuario = err
     })

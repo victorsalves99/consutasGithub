@@ -7,6 +7,21 @@ body {
     background-color:#010409 ;
     color: #fff;
 }
+#erro {
+    width: 450px;
+    background-color: #fff;
+    color: #ff0000;
+    padding: 20px 30px;
+    position: absolute;
+    right: 2rem;
+    opacity: 0;
+}
+.animacao {
+    animation: msg-erro 4000ms ease-out;
+}
+.erro p {
+    font-size: 20px;
+}
 .principal {
     width: 400px;
     height: 350px;
@@ -63,4 +78,13 @@ body {
 .card-resposta img {
     width: 140px;
     border-radius: 90px;
+}
+@keyframes msg-erro {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+    
 }
